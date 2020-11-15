@@ -1,0 +1,25 @@
+# This is the config for the extra hologram (Like portal hologram on Hypixel)
+#offset is calculated from the Center of the island (center block from the border)
+extra-hologram:
+  offset-x: 4.5
+  offset-y: 2.5
+  offset-z: -19.5
+  lines:
+    - '&bExtra'
+    - '&aHologram'
+
+# Settings for the island npc
+#offset is calculated from the Center of the island (center block from the border)
+#If you are gonna use the built-in entitycommand, You must use PLAYER entityType. Otherwise find your
+#own way to execute the command through non-player NPC.
+island-npc:
+  offset-x: -6.5
+  offset-y: -1
+  offset-z: -17.5
+  offset-yaw: -90
+  entityType: PLAYER
+  skinName: Jerry
+  entityCommand: dm open Jerry
+  lines:
+    - 'Jerry'
+    - '&e&lCLICK'

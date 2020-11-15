@@ -1,0 +1,21 @@
+name: Additions
+author: Call911
+version: 1.0
+main: me.call911.islandadditions.IslandAdditions
+description: idk plugin
+
+depend:
+  - Citizens
+  - SuperiorSkyblock2
+  - HolographicDisplays
+
+commands:
+  additions:
+    usage: /<command> reload
+    permission: 'additions.reload'
+    aliases:
+      - 'ia'
+
+permissions:
+  additions.reload:
+    default: op
