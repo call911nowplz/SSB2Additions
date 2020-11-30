@@ -81,10 +81,10 @@ public final class IslandAdditions extends JavaPlugin
     }
     
     public void createNpcAndHolograms(final Island island) {
-        if (this.islandObjects.containsKey(island.getOwner().getUniqueId())) {
+        if (this.islandObjects.containsKey(island.getUniqueId())) {
             return;
         }
-        final NPC npc = CitizensAPI.getNPCRegistry().createNPC(this.entityType, "ง7");
+        final NPC npc = CitizensAPI.getNPCRegistry().createNPC(this.entityType, "ยง7");
         String skinName = this.getConfig().getString("island-npc.skinName");
         npc.data().set(NPC.PLAYER_SKIN_UUID_METADATA, skinName);
         npc.data().set(NPC.PLAYER_SKIN_USE_LATEST, false);
